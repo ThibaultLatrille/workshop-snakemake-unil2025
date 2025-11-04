@@ -86,7 +86,7 @@ conda activate snakemake-workshop
 
 Note for Mac users on Apple Silicon (M1/M2/M3), the previous commands won't work and you need to instead use:
 ```bash
-CONDA_SUBDIR=osx-64 mamba create -n snakemake-workshop python=3.9
+CONDA_SUBDIR=osx-64 mamba create -n snakemake-workshop python=3.13
 conda activate snakemake-workshop
 conda config --env --set subdir osx-64
 mamba env update --file workshop.yaml
