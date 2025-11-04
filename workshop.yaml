@@ -1,0 +1,11 @@
+name: snakemake-workshop
+channels:
+    - conda-forge
+    - bioconda
+dependencies:
+    - python=3.13
+    - snakemake=9.13.4
+    - graphviz=13.1.2
+    - bcftools=1.22
+    - samtools=1.22
+    - bwa=0.7.19
