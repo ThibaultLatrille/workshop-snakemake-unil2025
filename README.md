@@ -9,6 +9,7 @@ This repository is used as a base for the workshop "Introduction to Snakemake fo
 The structure of the workshop loosely follows that of the official [Snakemake tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html), with a few modifications.
 
 All the exercises and material required to complete them are available on the repository's [wiki](https://github.com/ThibaultLatrille/workshop-snakemake-unil2025/wiki).
+The slides used during the workshop are available [as read-only Google slides](https://docs.google.com/presentation/d/10G5BTWv-owCtFo4xSjH_ipipVqvq7jDKkhQ6QkPT7iA/edit?usp=sharing)
 
 ## Setup the workshop environment
 
@@ -84,14 +85,6 @@ Once the environment is created, activate it with:
 conda activate snakemake-workshop
 ```
 
-Note for Mac users on Apple Silicon (M1/M2/M3), the previous commands won't work and you need to instead use:
-```bash
-CONDA_SUBDIR=osx-64 mamba create -n snakemake-workshop python=3.13
-conda activate snakemake-workshop
-conda config --env --set subdir osx-64
-mamba env update --file workshop.yaml
-```
-
 You can now run Snakemake and complete the workshop's exercises.
 
 ### Additional note: creating a Conda environment for Snakemake
@@ -108,3 +101,6 @@ mamba install -c conda-forge -c bioconda snakemake
 ```
 
 You can now activate the environment snakemake and run Snakemake from it. It is advised to keep the environment as clean as possible, *i.e.* only install software related to running snakemake in general, not software specifically for your workflow.
+
+## Acknowledgements
+Workshop is based on a tutorial made with ❤️ by Romain Feron for SIB days 2022 ["Introduction to Snakemake for reproducible analyses"](https://github.com/RomainFeron/workshop-snakemake-sibdays2022).
